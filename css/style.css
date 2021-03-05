@@ -20,4 +20,9 @@ footer {
     color: white;
     padding: 3rem;
     margin-top: auto;
+    font-weight: bold;
+}
+
+a.white{
+    color: white;
 }
