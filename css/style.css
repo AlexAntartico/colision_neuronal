@@ -23,6 +23,12 @@ footer {
     font-weight: bold;
 }
 
-a.white{
+a.fwhite{
     color: white;
 }
+
+.floating-menu {
+    font-family: sans-serif;
+    background: #333;
+    position: fixed;
+  }
