@@ -4,9 +4,7 @@ html {
 }
 
 body {
-    margin: 0;
     line-height: 1.6;
-    padding: 3rem;
 }
 
 header {
@@ -23,6 +21,12 @@ footer {
     font-weight: bold;
 }
 
+main {
+    padding: 3rem;
+}
+
+/* classes */
+
 a.fwhite{
     color: white;
 }
@@ -31,4 +35,13 @@ a.fwhite{
     font-family: sans-serif;
     background: #333;
     position: fixed;
+  }
+
+  .header-menu {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    padding: 0rem;
+    text-align: justify;
+    text-justify: inter-word;
   }
