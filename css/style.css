@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    background-color: #494D5F;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -13,14 +14,10 @@ body {
        
 }
 
-header {
-    background: #333;
-    color: white;
-}
-
 footer {
     text-align: center;
-    background: black;
+    background-color: #A0D2EB;
+    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
     color: white;
     padding: 3rem;
     margin-top: auto;
@@ -33,6 +30,11 @@ main {
 
 /* classes */
 
+.black-white-section {
+    background: #333;
+    color: white;
+}
+
 a.fwhite{
     color: white;
 }
@@ -44,13 +46,31 @@ a.fwhite{
     overflow: auto;
   }
 
-.header-menu {
-    height: 50px;
-    width: 100%;
-    background-color: black;
-    padding: 0rem;
-    text-align: center;
-    /* Below creates a floating menu */
-    position: fixed;
-    overflow: auto;
+  .main-nav {
+      list-style: none;
+      background-color: #845BB3;
+      margin-top: auto;
+      padding: 1rem;
+      text-align: left;
+      /* Below to create floating menu */
+      position: fixed;
+      overflow: auto;
+      width: 100%;
+  }
+
+  .main-nav__item {
+      display: inline-block;
+  }
+
+  .main-nav__item a {
+      color: #e5eaf5;
+      text-decoration: none;
+      padding: 3px;
+      text-align: left;
+      border: 1px solid transparent;
+  }
+
+  .main-nav__item a:hover {
+        border-radius: 4px;
+        border: 3px solid #D0BDF4;
   }
