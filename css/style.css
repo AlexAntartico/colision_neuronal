@@ -1,27 +1,33 @@
 html {
-    height: 100%;
-    background-color: #494D5F;
     font-family: Arial, Helvetica, sans-serif;
     /* The below will force any content inside the border box */
     box-sizing: border-box;
 }
 
 body {
-    line-height: 1rem;
+    background-color:   #007CC7;
+    color: #EEFBFB;
+}
+
+header {
+    font-family: monospace;
+    font-size: 1.4rem;
 }
 
 footer {
     text-align: center;
-    background-color: #A0D2EB;
-    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
+    background-color: #12232E;
     color: white;
-    padding: 1rem;
+    padding: 1.6rem;
     margin-top: auto;
     font-weight: bold;
+    font-size: 1.6rem;
+    font-family: monospace;
 }
 
 main {
     padding: 4rem 3rem;
+    /* margin-top: 4rem; */
 }
 
 /* classes */
@@ -30,68 +36,96 @@ main {
     background: #333;
     color: white;
     padding: 2rem;
-    margin: 2rem;
 }
 
 a.fwhite{
     color: white;
 }
 
-.floating-menu {
-    font-family: sans-serif;
-    background: #333;
-    position: fixed;
-    overflow: auto;
-  }
-
   .main-nav {
       list-style: none;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      background-color: #845BB3;
+      background-color: #12232E;
       margin-top: auto;
       padding: 1.5rem;
       text-align: left;
       /* Below to create floating menu */
-      position: fixed;
+      /* position: fixed;
       overflow: auto;
-      width: 100%;
+      width: 100%; */
   }
 
-  .main-nav__item {
-      display: inline-block;
-  }
-
-  .main-nav__item a {
-      color: #e5eaf5;
-      text-decoration: none;
-      padding: .25rem;
-      text-align: left;
-      border: .1rem solid transparent;
-  }
-
-  .main-nav__item a:hover {
-        border-bottom: .2rem solid #D0BDF4;
-  }
-
-  .container {
+.container-box-white {
       display: grid;
-      grid-template-columns: 1fr, 2fr;
+      grid-template-columns: 1fr, 3fr;
       grid-template-rows: 1fr;
-      gap: 1.5rem;
-      grid-template-areas: "item1 item2 item2";
+      gap: 1rem;
+      grid-template-areas: "item1 item2 item2 item2 ";
+      /* background-color: #EEFBFB; */
+      color: #12232E;
+      padding: 1rem;
       /* grid-template-rows: auto; */
-  }
+}
 
-  .item11 {
-      grid-area: item1;
-      text-align: justify;
-  }
+.item11 {
+    grid-area: item1;
+    text-align: justify;
+    background-color: #EEFBFB;
+    padding: 1.5rem;
+}
 
-  .item22 {
-      grid-area: item2;
-  }
+.item22 {
+    grid-area: item2;
+}
 
-  .made-with {
-    text-align: left;
-    font-family: monospace;
+.img-gradient {
+    max-width: 100%;
+    max-height: 100%;
+    background: linear-gradient(0deg, #00000088 40%, black 100%);
+}
+
+.img-module {
+    background: linear-gradient(to bottom, #00000088 30%, #ffffff44 100%);
+
+}
+
+.gradient-text {
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    /* Fallbacks for diff browsers */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    transition: 0.4s;
+    display: inline-block;
+}
+
+.button a {
+    text-decoration: none;
+    color: #EEFBFB;
+}
+
+.button:hover {
+    background-color: #203647;
+}
+
+.fa {
+    padding: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-twitter, .fa-facebook, .fa-youtube {
+    color: white;
+}
+
+.fa:hover {
+    background-color: #12232E;
 }
