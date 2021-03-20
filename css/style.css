@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background-color: #007CC7;
+    background-color:   #007CC7;
     color: #EEFBFB;
 }
 
@@ -16,12 +16,12 @@ header {
 
 footer {
     text-align: center;
-    background-color: #A0D2EB;
-    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
+    background-color: #12232E;
     color: white;
-    padding: 1rem;
+    padding: 1.6rem;
     margin-top: auto;
     font-weight: bold;
+    font-size: 1.6rem;
     font-family: monospace;
 }
 
@@ -98,8 +98,6 @@ a.fwhite{
     -webkit-text-fill-color: transparent;
 }
 
-}
-
 .button {
     background-color: transparent;
     border: none;
@@ -116,4 +114,18 @@ a.fwhite{
 
 .button:hover {
     background-color: #203647;
+}
+
+.fa {
+    padding: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-twitter, .fa-facebook, .fa-youtube {
+    color: white;
+}
+
+.fa:hover {
+    background-color: #12232E;
 }
